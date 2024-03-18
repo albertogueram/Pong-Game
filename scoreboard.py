@@ -23,4 +23,7 @@ class Scoreboard(Turtle):
     def game_over(self):
         self.penup()
         self.goto(0, 0)
-        self.write("GAME OVER", align="center", font=('Arial', 50, 'normal'))
+        if self.user == 3:
+            self.write("CHAMPION!", align="center", font=('Arial', 50, 'normal'))
+        if self.comp == 3:
+            self.write("GAME OVER!", align="center", font=('Arial', 50, 'normal'))

@@ -8,7 +8,7 @@ class Ball(Turtle):
         self.penup()
         self.shapesize(stretch_len=1, stretch_wid=1)
         self.color("green")
-        self.speed("fastest")
+        self.game_speed = 0.1
         self.x_move = 10
         self.y_move = 10
 
